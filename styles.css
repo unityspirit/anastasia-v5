@@ -13,25 +13,33 @@
   opacity: 0.95;
 }
 
-/* Элегантный теплый оверлей */
+/* Элегантный теплый оверлей — чуть легче, чтобы фон дышал */
 .bg-overlay {
   position: fixed;
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 50%, rgba(247, 245, 240, 0.35) 0%, rgba(247, 245, 240, 0.80) 100%);
+  background: radial-gradient(circle at 50% 50%, rgba(247, 245, 240, 0.20) 0%, rgba(247, 245, 240, 0.65) 100%);
 }
 
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
   background-color: #F7F5F0;
+  font-size: 17px; /* базовый размер +1px от дефолта 16px */
 }
 
 body {
   overflow-x: hidden;
-  color: #1C1B1A;
+  color: #100F0E; /* чуть темнее прежнего #1C1B1A — больше контраста */
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.01em;
 }
+
+/* Глобальные усиления для всего текста на карточках */
+p, li { color: #2a2826; line-height: 1.85; }
+h1, h2, h3, h4 { color: #100F0E; }
+
 
 .page {
   position: relative;

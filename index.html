@@ -16,11 +16,11 @@
       theme: {
         extend: {
           colors: {
-            brandDark:   '#1C1B1A',
-            brandMuted:  '#686663',
+            brandDark:   '#0E0D0C',  /* глубже и контрастнее */
+            brandMuted:  '#4a4845',  /* вместо #686663 — темнее на 2 тона */
             brandBg:     '#F7F5F0',
-            brandAccent: '#8A9178',
-            brandBorder: '#E5E0D8',
+            brandAccent: '#6b7a5a',  /* чуть насыщеннее зелёный */
+            brandBorder: '#D8D2C8',  /* чуть темнее граница */
           },
           fontFamily: {
             sans:  ['Montserrat', 'sans-serif'],
@@ -94,7 +94,7 @@
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-serif text-brandDark leading-tight mb-8">
               Добро пожаловать в пространство, где фитнес это лишь инструмент, а главная цель <span class="italic text-brandAccent">свобода</span>.
             </h1>
-            <p class="text-sm sm:text-base font-light text-brandDark/80 max-w-2xl mx-auto leading-relaxed mb-10">
+            <p class="text-base sm:text-lg font-light text-brandDark/85 max-w-2xl mx-auto leading-relaxed mb-10">
               Свобода от зависимости от весов, от голодовок и от синдрома «с понедельника начну».
             </p>
             <div class="w-[1px] h-12 bg-brandBorder mx-auto mb-10"></div>
@@ -120,7 +120,7 @@
           <h2 class="text-4xl sm:text-6xl font-serif text-brandDark leading-tight mb-6">
             Моя философия в <span class="italic text-brandAccent">4 точках</span>
           </h2>
-          <p class="text-sm sm:text-base font-light text-brandMuted max-w-2xl mx-auto mb-20 leading-relaxed">
+          <p class="text-base sm:text-lg font-light text-brandMuted max-w-2xl mx-auto mb-20 leading-relaxed">
             Составлю тренировки под вашу цель, подберу питание, которое реально соблюдать, и разберу срывы, переедания и «качели» без диет, запретов и чувства вины.
           </p>
 
@@ -145,7 +145,7 @@
             <div class="p-12 bg-brandBg/80 backdrop-blur-md hover:bg-white/90 transition-colors duration-700 text-left">
               <span class="text-4xl font-serif italic text-brandAccent/40 block mb-6">03</span>
               <h3 class="text-lg font-medium uppercase tracking-[0.1em] text-brandDark mb-4">Голова</h3>
-              <p class="text-xs font-light text-brandMuted leading-loose">
+              <p class="text-sm font-normal text-brandMuted leading-loose">
                 Почему мы срываемся и как экстренно собраться, когда всё идёт не по плану.
               </p>
             </div>
@@ -153,7 +153,7 @@
             <div class="p-12 bg-brandBg/80 backdrop-blur-md hover:bg-white/90 transition-colors duration-700 text-left">
               <span class="text-4xl font-serif italic text-brandAccent/40 block mb-6">04</span>
               <h3 class="text-lg font-medium uppercase tracking-[0.1em] text-brandDark mb-4">Дисциплина</h3>
-              <p class="text-xs font-light text-brandMuted leading-loose">
+              <p class="text-sm font-normal text-brandMuted leading-loose">
                 Не через кнут, насилие и слёзы, а через понятную, бережную и устойчивую систему.
               </p>
             </div>
@@ -202,7 +202,7 @@
               <div>
                 <span class="text-[10px] uppercase tracking-[0.2em] text-brandAccent font-bold block mb-2">Личный контроль</span>
                 <h3 class="text-2xl font-serif text-brandDark mb-4">Сопровождение</h3>
-                <p class="text-sm font-light text-brandMuted leading-relaxed">
+                <p class="text-base font-light text-brandMuted leading-relaxed">
                   Идём по программе вместе: регулярная обратная связь, корректировки, ответы на любые вопросы и психологическая поддержка на всех этапах.
                 </p>
               </div>
