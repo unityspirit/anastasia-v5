@@ -176,7 +176,7 @@ window.handleBookingSubmit = function(e) {
   const contact = document.getElementById('client-contact').value;
   const tariff = document.getElementById('form-tariff').value;
   const text = `Здравствуйте, Анастасия!%0AМеня зовут ${encodeURIComponent(name)}.%0AКонтакт: ${encodeURIComponent(contact)}%0AИнтересует: ${encodeURIComponent(tariff)}`;
-  window.open(`https://t.me/AnastasiaEmelyanova?text=${text}`, '_blank');
+  window.open(`https://t.me/Emel_Anas?text=${text}`, '_blank');
   alert(`Спасибо, ${name}! Открываем диалог в Telegram.`);
   closeBookingModal();
   e.target.reset();
