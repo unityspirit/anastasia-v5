@@ -1,0 +1,84 @@
+/* ==========================================================================
+   СТИЛИ: АНАСТАСИЯ ЕМЕЛЬЯНОВА V5 (Luxury Gloss + Новый видеофон)
+   ========================================================================== */
+
+#gl-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+/* Элегантный теплый оверлей */
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, rgba(247, 245, 240, 0.35) 0%, rgba(247, 245, 240, 0.80) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  background-color: #F7F5F0;
+}
+
+body {
+  overflow-x: hidden;
+  color: #1C1B1A;
+}
+
+.page {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  opacity: 0.15;
+  transform: translateY(24px);
+  transition: opacity 0.85s cubic-bezier(0.25, 1, 0.5, 1), transform 0.85s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.page.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Навигация */
+.nav-link {
+  position: relative;
+  transition: color 0.4s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #1C1B1A;
+  transition: width 0.4s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Утонченный скроллбар */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #F7F5F0; }
+::-webkit-scrollbar-thumb { background: #D4CDC3; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #8A9178; }
+
+/* Анимация прелоадера */
+@keyframes editorial-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.animate-editorial-pulse {
+  animation: editorial-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
